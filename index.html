@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+    <head>
+        <title>To do app</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                Enter the task you want to do
+                <form>
+                    <div>
+                        <input type="text" id="task" placeholder="task">
+                    </div>
+                    <div>
+                        <input type="submit" class="btn" id="add">
+                    </div>
+                </form>
+            </div>
+            <div class="tasks">
+
+                <ul class="item" id="item">
+                    
+                </ul>
+    
+            </div>
+        </div>
+
+        <script>
+            //registering service worker
+            if ('serviceWorker' in navigator) {
+            console.log("Will the service worker register?");
+            navigator.serviceWorker.register('service-worker.js')
+              .then(function(reg){
+                console.log("Yes, it did.");
+              }).catch(function(err) {
+                console.log("No it didn't. This happened: ", err)
+              });
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

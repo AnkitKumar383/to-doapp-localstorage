@@ -1,0 +1,15 @@
+{
+  "short_name": "Attendence Manager",
+  "name": "Attendence Manager",
+  "icons": [
+    {
+      "src":"Hiking.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#444477",
+  "theme_color": "#222255",
+  "display": "standalone"
+}

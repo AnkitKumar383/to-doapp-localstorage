@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+body,html{
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    background: rgb(14, 14, 80);
+}
+.form{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    padding: 20px;
+}
+#task{
+    width:100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    color: lightgrey;
+    border-bottom: 2px solid yellow;
+}
+#task:active, #task:focus{
+    outline: none;
+}
+.btn{
+    margin-top: 20px;
+    background: dodgerblue;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+ul {
+    list-style-type: none;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 0px 10px;
+}
+ul li {
+    padding: 10px 15px;
+    background: white;
+    margin-bottom: 10px;
+    position: relative;
+}
+ul li > span {
+    position: absolute;
+    right: 10px;
+}
